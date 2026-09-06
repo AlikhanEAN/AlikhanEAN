@@ -1,11 +1,14 @@
 import os
-import google.generativeai as genai
+from google import genai
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel("gemini-1.5-flash")
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 prompt = "Dasturchilar uchun o'zbek tilida bitta juda qisqa, qiziqarli yoki motivatsion maslahat yoz (maksimal 2 ta gap). Hech qanday kirish so'zsiz, faqat maslahat matnining o'zi bo'lsin."
-response = model.generate_content(prompt)
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=prompt,
+)
 quote = response.text.strip()
 
 with open("README.md", "r", encoding="utf-8") as f:
