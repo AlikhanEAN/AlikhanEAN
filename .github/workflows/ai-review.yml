@@ -1,0 +1,63 @@
+name: Gemini Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-genai PyGithub
+
+      - name: Gemini Code Review Run
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO_NAME: ${{ github.repository }}
+        run: |
+          python - << 'EOF'
+          import os
+          import subprocess
+          from google import genai
+          from github import Github
+
+          diff = subprocess.check_output(['git', 'diff', 'origin/main...HEAD']).decode('utf-8', errors='ignore')
+          
+          if not diff.strip():
+              print("O'zgarish topilmadi.")
+              exit(0)
+
+          client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
+          prompt = f"""Sen tajribali dasturchisan. Quyidagi kod o'zgarishlarini (git diff) ko'rib chiq. 
+          Agar xatolik, xavfsizlik bo'yicha kamchilik yoki kodni optimallashtirish imkoni bo'lsa, o'zbek tilida qisqa, tushunarli qilib ko'rsatib ber:
+          
+          {diff[:6000]}"""
+
+          response = client.models.generate_content(
+              model="gemini-3.6-flash",
+              contents=prompt,
+          )
+
+          g = Github(os.environ["GITHUB_TOKEN"])
+          repo = g.get_repo(os.environ["REPO_NAME"])
+          pr = repo.get_pull(int(os.environ["PR_NUMBER"]))
+          
+          comment_body = f"### 🤖 Gemini Code Review\n\n{response.text.strip()}"
+          pr.create_issue_comment(comment_body)
+          EOF
