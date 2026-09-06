@@ -30,10 +30,9 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 
 ---
 
-### 📊 GitHub statistikasi
+### 📊 GitHub faolligi
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=AlikhanEAN&show_icons=true&theme=tokyonight&hide_border=true" alt="Asilbek's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlikhanEAN&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://streak-stats.demolab.com?user=AlikhanEAN&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
