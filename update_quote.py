@@ -6,7 +6,7 @@ client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 prompt = "Dasturchilar uchun o'zbek tilida bitta juda qisqa, qiziqarli yoki motivatsion maslahat yoz (maksimal 2 ta gap). Hech qanday kirish so'zsiz, faqat maslahat matnining o'zi bo'lsin."
 
 response = client.models.generate_content(
-    model="gemini-2.5-flash",
+   model="gemini-3.6-flash",
     contents=prompt,
 )
 quote = response.text.strip()
