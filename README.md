@@ -25,7 +25,7 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 > Bu yerda har kuni ertalab Gemini tomonidan yangi maslahat avtomatik e'lon qilinadi:
 
 <!-- GEMINI_QUOTE_START -->
-> 💡 **Kunning maslahati:** Mukammal kod birinchi urinishda yozilmaydi, hatto eng zo'r dasturlar ham `SyntaxError` bilan boshlangan. Xatolardan qo'rqmang — har bir to'g'rilangan bug sizni tajribaliroq dasturchiga aylantiradi!
+> 💡 **Kunning maslahati:** Mukammal kod yozishga oshiqmang, eng muhimi — ishlaydigan va tushunarli yechim yaratishdir. Bugungi xatolaringiz ("bug"lar) — ertangi yuqori mahoratingiz poydevoridir!
 <!-- GEMINI_QUOTE_END -->
 
 ---
