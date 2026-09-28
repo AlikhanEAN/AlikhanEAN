@@ -25,7 +25,7 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 > Bu yerda har kuni ertalab Gemini tomonidan yangi maslahat avtomatik e'lon qilinadi:
 
 <!-- GEMINI_QUOTE_START -->
-> 💡 **Kunning maslahati:** Xatolar — bu muammo emas, balki tajribangizdagi o'sish nuqtalaridir. Unutmang, hatto eng kuchli Senior dasturchi ham bir vaqtlar «Hello, World!»dan boshlagan!
+> 💡 **Kunning maslahati:** Kodingiz ishlamayotgan bo'lsa tushkunlikka tushmang, chunki har bir xato — bu yangi bilimgacha bo'lgan qadamdir. Eng zo'r dasturchi eng ko'p kod yozgan emas, eng ko'p xatosini to'g'rilagan kishidir!
 <!-- GEMINI_QUOTE_END -->
 
 ---
