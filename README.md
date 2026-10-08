@@ -25,7 +25,7 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 > Bu yerda har kuni ertalab Gemini tomonidan yangi maslahat avtomatik e'lon qilinadi:
 
 <!-- GEMINI_QUOTE_START -->
-> 💡 **Kunning maslahati:** Muvaffaqiyatli dasturchi — bu xatolardan qo'rqmaydigan, balki ularni yechishdan zavq oladigan insondir. Bugun sizni qiynagan "bug" — ertaga eng katta tajribangizga aylanadi!
+> 💡 **Kunning maslahati:** Eng yaxshi dasturchi — hech qachon xato qilmaydigan emas, balki har bir xatodan to'g'ri xulosa chiqara oladigan kishidir. Kodingiz mukammal bo'lmasligi mumkin, lekin u har kuni kechagidan yaxshiroq bo'lsin!
 <!-- GEMINI_QUOTE_END -->
 
 ---
