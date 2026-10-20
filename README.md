@@ -25,7 +25,7 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 > Bu yerda har kuni ertalab Gemini tomonidan yangi maslahat avtomatik e'lon qilinadi:
 
 <!-- GEMINI_QUOTE_START -->
-> 💡 **Kunning maslahati:** Kodingiz birinchi urinishda xatosiz ishlasa, shubhalaning, lekin ishlamasa — aslo taslim bo'lmang! Har bir yengilgan "bug" sizni yanada kuchliroq dasturchiga aylantiradi.
+> 💡 **Kunning maslahati:** Mukammal kod yozishga oshiqmang — avval ishlaydiganini yarating va uni sekin-asta yaxshilang. Axir dunyodagi eng buyuk loyihalar ham oddiy "Hello World"dan boshlangan!
 <!-- GEMINI_QUOTE_END -->
 
 ---
