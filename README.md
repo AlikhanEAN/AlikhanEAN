@@ -25,7 +25,7 @@ Muhandislik, dasturlash va avtomatlashtirish yo'nalishlarida loyihalar ustida is
 > Bu yerda har kuni ertalab Gemini tomonidan yangi maslahat avtomatik e'lon qilinadi:
 
 <!-- GEMINI_QUOTE_START -->
-> 💡 **Kunning maslahati:** Kodni shunchaki kompyuter tushunishi uchun emas, insonlar o'qiy olishi uchun yozing. Bugun yozgan toza kodingiz uchun kelajakdagi o'zingiz albatta rahmat aytadi!
+> 💡 **Kunning maslahati:** Agar o'tgan oy yozgan kodingizdan bugun uyalsangiz, demak siz to'g'ri yo'ldasiz va o'syapsiz. Kod yozishdan to'xtamang — har bir yengilgan bug sizni tajribaliroq dasturchiga aylantiradi!
 <!-- GEMINI_QUOTE_END -->
 
 ---
